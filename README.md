@@ -3,6 +3,7 @@ Fit Inno+2015 NIR Cepheid templates to light curve measurements
 
 Example:
 
+```R
 source('fit.Inno.h.r')
 load.pars()
 f.mlc = mdir + id + '_ukt.dat'
@@ -25,3 +26,4 @@ PHI = pars[3]
 yc = calt(xc, PHI, M, L, a0)
 res = calt(x, PHI, M, L, a0) - y
 lines(xc, yc, col=2, lwd=1)
+```
