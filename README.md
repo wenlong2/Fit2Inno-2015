@@ -13,6 +13,7 @@ t = dat[,1] - t0
 y = dat[,2]
 e = dat[,3]
 Q = q0 ## Cepheid period or other folding rules
+period = q0
 x = (t %% Q) / Q
 col = rep(1, nrow(dat))
 plot(x, y, xlab='Phase',ylab=ylab, ylim=rev(range(y))+c(0.15,-0.1)/2, main=id, xlim=c(0,1), pch=19, col=col)
